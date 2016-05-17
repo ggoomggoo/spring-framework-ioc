@@ -3,5 +3,13 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd">
 
-	<bean id="orderManager" class="edu.biz.ioc.OrderManager"></bean>
+	<bean id="hyundaiMaker" class="edu.biz.ioc.HyundaiMaker"></bean>
+	<bean id="daewooMaker" class="edu.biz.ioc.DaewooMaker"></bean>
+	
+	<bean id="orderManager" class="edu.biz.ioc.OrderManager">
+		<property name="maker">
+			<ref bean="hyundaiMaker"/>
+		</property>
+	</bean>
+	
 </beans>

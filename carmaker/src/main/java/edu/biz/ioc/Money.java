@@ -1,5 +1,8 @@
 package edu.biz.ioc;
 
+import org.springframework.stereotype.Component;
+
+@Component("money")
 public class Money {
 	
 	private int amount;

@@ -26,6 +26,8 @@ public class OrderManagerApp {
 		// .getBean()
 //		OrderManager orderManager = (OrderManager) factory.getBean("orderManager");
 		orderManager.order();
+		
+		System.out.println();
 	}
 
 }

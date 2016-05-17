@@ -1,12 +1,15 @@
 package edu.biz.ioc;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 @Service("orderManager")
 public class OrderManager {
-	@Autowired
+//	@Autowired
+	@Resource
 	@Qualifier("daewoo")
 //	private HyundaiMaker maker;
 	private CarMaker maker;
